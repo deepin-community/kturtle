@@ -1,0 +1,43 @@
+Source: kturtle
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Norbert Preining <norbert@preining.info>,
+           Pino Toscano <pino@debian.org>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.83.0~),
+               gettext,
+               libkf5coreaddons-dev (>= 5.83.0~),
+               libkf5crash-dev (>= 5.83.0~),
+               libkf5doctools-dev (>= 5.83.0~),
+               libkf5i18n-dev (>= 5.83.0~),
+               libkf5kio-dev (>= 5.83.0~),
+               libkf5newstuff-dev (>= 5.83.0~),
+               libkf5textwidgets-dev (>= 5.83.0~),
+               libqt5svg5-dev (>= 5.15.0~),
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev (>= 5.15.0~),
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: https://projects.kde.org/projects/kde/kdeedu/kturtle
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/kturtle.git
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/kturtle
+
+Package: kturtle
+Architecture: any
+Section: devel
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: khelpcenter
+Breaks: ${kde-l10n:all}
+Replaces: ${kde-l10n:all}
+Description: educational programming environment
+ KTurtle is an educational programming environment which uses the TurtleScript
+ programming language (inspired by Logo) to make programming as easy and
+ accessible as possible.
+ .
+ The user issues TurtleScript language commands to control the "turtle", which
+ draws on the canvas, making KTurtle suitable for teaching elementary
+ mathematics, geometry and programming.
+ .
+ This package is part of the KDE education module.
